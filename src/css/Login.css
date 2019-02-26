@@ -4,12 +4,19 @@ body {
 
 .LoginHeader {
     color: white;
-    margin-left: 35%;
-    margin-top: 5%;
+    margin-left: 580px;
+    margin-top: 2%;
     font-size: 30px;
 }
 
 p1 {
     color: white;
-    margin-left: 42%;
+    margin-left: 685px;
+}
+
+.LoginCard {
+    margin-top: 50px;
+    margin-left: 600px;
+    margin-right: 600px;
+
 }
