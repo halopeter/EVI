@@ -1,68 +1,39 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+﻿# Welcome to EVI Documentation!
 
-## Available Scripts
+## Character
+**Name** - Lekéri a karakter nevét.
+**Date of Birth** - Lekéri a karakter létrehozásának pontos dátumát.
+**Jump Fatique** - Lekéri a karakter Ugrási fáradtságának még hátralévő idejét.
+**Skill Points** - Lekéri a karakter eddig megtanult képességeinek az össz számát.
+**ISK** - Lekéri a karakter játékbeli pénz mennyiségét. (ISK = InterStellar Kredit)
+**Standings** - Lekéri a karakter többi frakcióval való tiszteletét.
 
-In the project directory, you can run:
+## Fittings
+**Fittings** - Itt megjelenik a karakter által eddig összes elmentett és előre beállított felszerelés kompozíció nevei bizonyos hajóira. Ez egy Selectable Table lesz, mely mindegyik eleme mellette lesz egy Delete gomb, amivel kitudjuk majd törölni az adott elemet.
+**Fittings Information** - Itt megjelennek ezen kompozíciók adatai.
 
-### `npm start`
+## Corporation
+**Corporation Name** - Lekéri azon Céhnek a nevét, melynek tagja a karakterünk.
+**Tag** - Ez a Céhnek az általában 3 betűből álló rövidítése.
+**Member Count** - Ennyi tagja van a Céhnek.
+**FoundDate** - Ekkor alapították a Céhet.
+**Description** - A Céh leírása.
+**Tax** - A Céhen belüli adó.
+**URL** - A Céh hivatalos weboldala, ha létezik olyan.
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Assets
+**Items** - Itt van egy külső lista, mely azokat az űrállomásokat tartalmazza, melyben van valamilyen tárgyunk. Ezek külön-külön lenyithatóak, és ha ezt megtesszük, akkor egy újabb lista jelenik meg, hogy azon az adott űrállomáson milyen termékeink vannak.
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+## Industry
+**Facilities** - Itt meglehet nézni a játékban lévő olyan űrállomásokat, ahol lehet gyártani.
+**Jobs** - Itt láthatjuk a saját karakterünk által leadott munkafolyamatokat.
+**Mining** - Itt megtaláljuk az előző pár napban bányászott aszteroida mennyiségünket.
 
-### `npm test`
+## Status
+**Online Players** - Megtekinthetjük, hogy éppen jelenleg mennyi játékos elérhető játékon belül.
+**Server Version** - A szerver kliens éppen aktuális verzióját jeleníti meg.
+**Start Date** - Kiírja, hogy mióta nem volt leállítva a szerver.
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Login
+**Login** - Erre a gombra kattintva átvezényel minket a CCP egy Authentication oldalára, ahol a felhasználónevünk és jelszavunk segítségével betudunk jelentkezni. Ha ez sikeres, utána visszaérkező adatok közül megfogjuk kapni a Tokent.
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
