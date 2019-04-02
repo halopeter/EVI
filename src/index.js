@@ -1,11 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+import { CookiesProvider } from 'react-cookie';
 import * as serviceWorker from './serviceWorker';
+
+import './index.css';
 import Login from './components/Login';
 //import Character from './components/Character';
 
-ReactDOM.render(<Login />, document.getElementById('root'));
+ReactDOM.render(
+    <CookiesProvider>
+        <Login />
+    </CookiesProvider>,
+ document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
