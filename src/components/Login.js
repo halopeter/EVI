@@ -5,7 +5,6 @@ import Form from 'react-bootstrap/Form';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 import '../css/Login.css';
-import Callback from '../components/Callback';
 
 class Login extends Component {
 
@@ -23,16 +22,11 @@ class Login extends Component {
                                 <Card.Text>So you have to click this button to get started</Card.Text>
                                 <Form.Group>
                                     <a class="btn btn-primary" href="https://login.eveonline.com/oauth/authorize/?response_type=token&redirect_uri=https://dgwxfhbva6lnp.cloudfront.net/callback/&client_id=e5e77f49c50041a68164dce7d9eb07ac&scope=esi-characters.read_standings.v1&state=uniquestate123" role="button">Login</a>
-                                    <li>
-                                        <Link to="/callback">CALLBACK!</Link>
-                                    </li>
                                 </Form.Group>
                             </Card.Body>
                             <Card.Footer className="text-muted">It won't take long, I promise</Card.Footer>
                         </Card>
                     </Form.Group>
-
-                    <Route path="/callback" component={Callback} />
                 </div>
             </Router>
         );

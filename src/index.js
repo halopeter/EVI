@@ -1,16 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { CookiesProvider } from 'react-cookie';
+import { BrowserRouter } from 'react-router-dom';
 import * as serviceWorker from './serviceWorker';
 
+import App from './App';
 import './index.css';
-import Login from './components/Login';
-//import Character from './components/Character';
 
 ReactDOM.render(
-    <CookiesProvider>
-        <Login />
-    </CookiesProvider>,
+    <BrowserRouter>
+        <App/>
+    </BrowserRouter>,
  document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
