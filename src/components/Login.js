@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 //import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import Form from 'react-bootstrap/Form';
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 import '../css/Login.css';
 
@@ -10,7 +9,6 @@ class Login extends Component {
 
     render() {
         return(
-            <Router>
                 <div>
                     <header className="LoginHeader">Welcome to EVE Virtual Interface</header>
                     <p1>One application to rule them all</p1>
@@ -28,7 +26,6 @@ class Login extends Component {
                         </Card>
                     </Form.Group>
                 </div>
-            </Router>
         );
     };
 };

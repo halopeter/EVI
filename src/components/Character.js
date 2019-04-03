@@ -5,12 +5,15 @@ import NavBar from './Navbar';
 import eve from './eve.jpg';
 
 class Character extends Component {
+    componentDidMount() {
+        console.log(this.props.characterId);
+    };
     render() {
         return(
-            <div>
-                <NavBar />
-                <Image src={eve}/>
-            </div>
+                <div>
+                    <NavBar />
+                    <Image src={eve}/>
+                </div>
         );
     };
 }
