@@ -5,7 +5,6 @@ import Login from './components/Login';
 import Callback from './components/Callback';
 import Character from './components/Character';
 
-
 const App = () => {
   const [characterId, setCharacterId] = React.useState('');
 
