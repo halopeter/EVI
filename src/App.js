@@ -4,6 +4,7 @@ import { Route, Redirect, Switch } from 'react-router-dom';
 import Login from './components/Login';
 import Callback from './components/Callback';
 import Character from './components/Character';
+import Status from './components/Status';
 
 const App = () => {
   const [characterId, setCharacterId] = React.useState('');
@@ -25,6 +26,11 @@ const App = () => {
           path="/character"
           exact
           render={(props) => <Character {...props} characterId={characterId} />}
+        />
+        <Route
+          path="/status"
+          exact
+          render={(props) => <Status {...props} />}
         />
         <Redirect to="/login" />
       </Switch>
